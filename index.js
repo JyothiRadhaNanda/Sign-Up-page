@@ -12,6 +12,7 @@ const nama = document.getElementById("nama");
 const umur = document.getElementById("umur");
 const slide1 = document.getElementById("slide1");
 const slide2 = document.getElementById("slide2");
+const backButton = document.getElementById("gusti");
 
 function validation() {
   if (firstName.value === "") {
@@ -47,6 +48,13 @@ function hasil() {
     umur.innerText = age.value;
   }
 }
+
+function back() {
+  window.location.reload();
+  // alert("test");
+}
+
+backButton.addEventListener("click", back);
 
 SignUpForm.onsubmit = (event) => {
   event.preventDefault();
