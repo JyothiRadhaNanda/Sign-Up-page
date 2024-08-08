@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap");
+* {
+  padding: 2em;
+  margin: 0;
+}
+
+body {
+  padding: 0px;
+  max-width: 100%;
+  min-height: 93vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: gainsboro;
+}
+
+.containeru {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  padding: 0;
+}
+.containeru h1 {
+  padding: 0;
+  padding-block: 10px;
+}
+.containeru .frontName {
+  display: none;
+}
+.containeru .lastName {
+  display: none;
+}
+.containeru .age {
+  display: none;
+}
+.containeru form {
+  background-color: white;
+  box-shadow: 0 1px 20px rgb(75, 75, 75);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: "Radio Canada Big", sans-serif;
+}
+.containeru form h1 {
+  text-align: center;
+}
+.containeru form .result {
+  display: none;
+}
+.containeru form .agehasil {
+  display: none;
+}
+.containeru form span {
+  padding: 0;
+  text-align: center;
+  color: red;
+}
+.containeru form label {
+  color: black;
+  padding: 0;
+  font-size: 20px;
+}
+.containeru form input {
+  width: 100%;
+  height: 5px;
+  border-radius: 20px;
+  border-style: solid;
+}
+.containeru form #firstName {
+  margin-bottom: 10px;
+}
+.containeru form #lastName {
+  margin-bottom: 10px;
+}
+.containeru form #age {
+  width: 60%;
+  margin-right: 10px;
+}
+.containeru form .biji {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.containeru form #submit {
+  width: 30%;
+}
+.containeru form #age-submit {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  padding-inline: 0;
+  padding-block: 0;
+  justify-content: space-between;
+}
+.containeru form #age-submit label {
+  padding-left: 10px;
+  padding-right: 20px;
+  align-content: center;
+  margin-bottom: 10px;
+}
+
+.slide1 {
+  display: none;
+}
+
+.slide2 {
+  display: none;
+}
+
+.Ergebnisse {
+  background-color: aquamarine;
+}
+
+#hasil {
+  background-color: white;
+  box-shadow: 0 1px 20px rgb(75, 75, 75);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#nama {
+  background-color: gainsboro;
+  border-radius: 20px;
+}
+
+#umur {
+  background-color: gainsboro;
+  border-radius: 20px;
+}
+
+.yastu {
+  display: flex;
+  flex-direction: column;
+  max-width: 450px;
+  padding: 0;
+}/*# sourceMappingURL=style.css.map */
