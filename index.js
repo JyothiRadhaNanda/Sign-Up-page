@@ -15,19 +15,19 @@ const slide2 = document.getElementById("slide2");
 const backButton = document.getElementById("gusti");
 
 function validation() {
-  if (firstName.value === "") {
+  if (firstName.value.trim() === "") {
     fnAlert.innerHTML = "Field nama depan harus di isi!";
   } else {
     fnAlert.innerHTML = "mantap";
     fnAlert.classList.add("result");
   }
-  if (lastName.value === "") {
+  if (lastName.value.trim() === "") {
     lnAlert.innerHTML = "Field nama belakang harus di isi!";
   } else {
     lnAlert.innerHTML = "mantap";
     lnAlert.classList.add("result");
   }
-  if (age.value < 18) {
+  if (age.value.trim() < 18) {
     ageAlert.innerHTML = "Pengguna harus di atas 18 tahun!";
   } else {
     ageAlert.innerHTML = "mantap";
