@@ -13,20 +13,27 @@ const umur = document.getElementById("umur");
 const slide1 = document.getElementById("slide1");
 const slide2 = document.getElementById("slide2");
 const backButton = document.getElementById("gusti");
+const symbols = /[!@#$%^&*()_+{}\[\]:;"'<>,.?/~`1234567890]/;
 
 function validation() {
   if (firstName.value.trim() === "") {
-    fnAlert.innerHTML = "Field nama depan harus di isi!";
+    fnAlert.innerHTML = "Nama depan harus di isi!";
+  } else if (symbols.test(firstName.value)) {
+    fnAlert.innerHTML = "Nama depan tidak boleh simbol!";
   } else {
     fnAlert.innerHTML = "mantap";
     fnAlert.classList.add("result");
   }
+
   if (lastName.value.trim() === "") {
-    lnAlert.innerHTML = "Field nama belakang harus di isi!";
+    lnAlert.innerHTML = "Nama belakang harus di isi!";
+  } else if (symbols.test(lastName.value)) {
+    lnAlert.innerHTML = "Nama belakang tidak boleh simbol";
   } else {
     lnAlert.innerHTML = "mantap";
     lnAlert.classList.add("result");
   }
+
   if (age.value.trim() < 18) {
     ageAlert.innerHTML = "Pengguna harus di atas 18 tahun!";
   } else {
