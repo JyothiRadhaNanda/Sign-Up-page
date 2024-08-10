@@ -54,8 +54,7 @@ body {
 }
 .containeru form span {
   padding: 0;
-  text-align: center;
-  color: red;
+  text-align: left;
 }
 .containeru form label {
   color: black;
@@ -98,7 +97,6 @@ body {
   padding-left: 10px;
   padding-right: 20px;
   align-content: center;
-  margin-bottom: 10px;
 }
 
 .slide1 {
